@@ -164,14 +164,13 @@ export default function Home() {
             <div className="space-y-8">
               {/* The Motivation */}
               <motion.div
-                className="bg-gradient-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-lg rounded-2xl p-8 border border-purple-500/20"
+                className="bg-linear-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-lg rounded-2xl p-8 border border-purple-500/20"
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                <h3 className="text-2xl font-bold text-purple-300 mb-4 flex items-center gap-3">
-                  <span className="text-3xl">💡</span>
+                <h3 className="text-2xl font-bold text-purple-300 mb-4">
                   The Motivation
                 </h3>
                 <p className="text-gray-200 text-lg leading-relaxed mb-4">
@@ -200,14 +199,13 @@ export default function Home() {
 
               {/* My Action */}
               <motion.div
-                className="bg-gradient-to-br from-blue-900/30 to-indigo-900/30 backdrop-blur-lg rounded-2xl p-8 border border-blue-500/20"
+                className="bg-linear-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-lg rounded-2xl p-8 border border-blue-500/20"
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                <h3 className="text-2xl font-bold text-blue-300 mb-6 flex items-center gap-3">
-                  <span className="text-3xl">⚡</span>
+                <h3 className="text-2xl font-bold text-blue-300 mb-6">
                   My Action
                 </h3>
                 <div className="space-y-6">
@@ -248,27 +246,26 @@ export default function Home() {
 
               {/* The Result */}
               <motion.div
-                className="bg-gradient-to-br from-emerald-900/30 to-teal-900/30 backdrop-blur-lg rounded-2xl p-8 border border-emerald-500/20"
+                className="bg-linear-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-lg rounded-2xl p-8 border border-purple-500/20"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
-                <h3 className="text-2xl font-bold text-emerald-300 mb-6 flex items-center gap-3">
-                  <span className="text-3xl">📊</span>
+                <h3 className="text-2xl font-bold text-purple-300 mb-6">
                   The Result
                 </h3>
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
-                  <div className="bg-black/20 rounded-xl p-6 border border-emerald-500/20">
-                    <div className="text-5xl font-bold text-emerald-300 mb-2">
+                  <div className="bg-black/20 rounded-xl p-6 border border-purple-500/20">
+                    <div className="text-5xl font-bold text-purple-300 mb-2">
                       80%
                     </div>
                     <div className="text-gray-300">
                       프론트엔드 병합 충돌 감소
                     </div>
                   </div>
-                  <div className="bg-black/20 rounded-xl p-6 border border-emerald-500/20">
-                    <div className="text-5xl font-bold text-emerald-300 mb-2">
+                  <div className="bg-black/20 rounded-xl p-6 border border-blue-500/20">
+                    <div className="text-5xl font-bold text-blue-300 mb-2">
                       3.5x
                     </div>
                     <div className="text-gray-300">
@@ -279,7 +276,7 @@ export default function Home() {
                 <p className="text-gray-300 leading-relaxed">
                   개발자들이 불필요한 코드 충돌과 파편화된 규칙을 신경 쓰지
                   않고,
-                  <span className="text-emerald-300 font-semibold">
+                  <span className="text-purple-300 font-semibold">
                     {" "}
                     '중요한 프로덕트 개발에만 온전히 힘을 쏟을 수 있는'
                   </span>{" "}
@@ -306,7 +303,7 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <span className="text-blue-400 font-mono text-sm tracking-wider">
+              <span className="text-purple-400 font-mono text-sm tracking-wider">
                 CASE STUDY 02
               </span>
               <h2 className="text-4xl md:text-5xl font-bold text-white mt-4 mb-6">
@@ -320,14 +317,13 @@ export default function Home() {
             <div className="space-y-8">
               {/* The Opportunity */}
               <motion.div
-                className="bg-gradient-to-br from-amber-900/30 to-orange-900/30 backdrop-blur-lg rounded-2xl p-8 border border-amber-500/20"
+                className="bg-linear-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-lg rounded-2xl p-8 border border-purple-500/20"
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                <h3 className="text-2xl font-bold text-amber-300 mb-4 flex items-center gap-3">
-                  <span className="text-3xl">🔍</span>
+                <h3 className="text-2xl font-bold text-purple-300 mb-4">
                   The Opportunity
                 </h3>
                 <p className="text-gray-200 text-lg leading-relaxed mb-4">
@@ -338,7 +334,7 @@ export default function Home() {
                 <p className="text-gray-300 leading-relaxed">
                   고령자 대상 근감소증 앱 개발 완료 후, 복지관에 앱 설치를
                   지원하는 역할로 방문했습니다. 저는 이것을 개발팀의 가설과{" "}
-                  <span className="text-amber-300 font-semibold">
+                  <span className="text-purple-300 font-semibold">
                     '실제 사용자의 현실'
                   </span>
                   을 직접 검증할 수 있는 핵심 기회로 판단했습니다. 코드를 넘어
@@ -349,14 +345,13 @@ export default function Home() {
 
               {/* Key Findings */}
               <motion.div
-                className="bg-gradient-to-br from-rose-900/30 to-pink-900/30 backdrop-blur-lg rounded-2xl p-8 border border-rose-500/20"
+                className="bg-linear-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-lg rounded-2xl p-8 border border-blue-500/20"
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                <h3 className="text-2xl font-bold text-rose-300 mb-6 flex items-center gap-3">
-                  <span className="text-3xl">🎯</span>
+                <h3 className="text-2xl font-bold text-blue-300 mb-6">
                   Key Findings: 가설 vs 현실
                 </h3>
                 <div className="space-y-4">
@@ -395,7 +390,7 @@ export default function Home() {
                   ].map((finding, idx) => (
                     <div
                       key={idx}
-                      className="bg-black/20 rounded-xl p-5 border border-rose-500/10"
+                      className="bg-black/20 rounded-xl p-5 border border-blue-500/10"
                     >
                       <h4 className="text-lg font-semibold text-white mb-3">
                         {finding.title}
@@ -408,8 +403,8 @@ export default function Home() {
                           </span>
                         </div>
                         <div className="flex gap-3">
-                          <span className="text-rose-300 shrink-0">현실:</span>
-                          <span className="text-rose-200">
+                          <span className="text-blue-300 shrink-0">현실:</span>
+                          <span className="text-blue-200">
                             {finding.reality}
                           </span>
                         </div>
@@ -421,20 +416,19 @@ export default function Home() {
 
               {/* The Result */}
               <motion.div
-                className="bg-gradient-to-br from-violet-900/30 to-purple-900/30 backdrop-blur-lg rounded-2xl p-8 border border-violet-500/20"
+                className="bg-linear-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-lg rounded-2xl p-8 border border-purple-500/20"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
-                <h3 className="text-2xl font-bold text-violet-300 mb-6 flex items-center gap-3">
-                  <span className="text-3xl">✨</span>
+                <h3 className="text-2xl font-bold text-purple-300 mb-6">
                   The Result
                 </h3>
                 <div className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div className="bg-black/20 rounded-xl p-6 border border-red-500/20">
-                      <div className="text-sm font-mono text-red-400 mb-2">
+                    <div className="bg-black/20 rounded-xl p-6 border border-purple-500/20">
+                      <div className="text-sm font-mono text-purple-400 mb-2">
                         BEFORE
                       </div>
                       <ul className="space-y-2 text-gray-300 text-sm">
@@ -444,8 +438,8 @@ export default function Home() {
                         <li>• 암묵적인 사용자 흐름</li>
                       </ul>
                     </div>
-                    <div className="bg-black/20 rounded-xl p-6 border border-emerald-500/20">
-                      <div className="text-sm font-mono text-emerald-400 mb-2">
+                    <div className="bg-black/20 rounded-xl p-6 border border-blue-500/20">
+                      <div className="text-sm font-mono text-blue-400 mb-2">
                         AFTER
                       </div>
                       <ul className="space-y-2 text-gray-300 text-sm">
@@ -458,17 +452,17 @@ export default function Home() {
                   </div>
                   <p className="text-gray-300 leading-relaxed">
                     기술 중심의 '세련된 UI'가 아닌, 사용자 중심의{" "}
-                    <span className="text-violet-300 font-semibold">
+                    <span className="text-purple-300 font-semibold">
                       '명확하고 쉬운 UI'
                     </span>
                     로 제품을 전면 개선하여 고령 사용자의 앱 접근성을 실질적으로
                     높였습니다.
                   </p>
-                  <div className="bg-violet-500/10 rounded-xl p-6 border border-violet-500/20">
+                  <div className="bg-purple-500/10 rounded-xl p-6 border border-purple-500/20">
                     <p className="text-white font-semibold text-lg">
                       단순히 버그를 고치는 개발자가 아닌, 사용자의 문제를 찾아
                       해결하는{" "}
-                      <span className="text-violet-300">'프로덕트 메이커'</span>
+                      <span className="text-purple-300">'프로덕트 메이커'</span>
                       로서의 역할을 완수했습니다.
                     </p>
                   </div>
@@ -498,7 +492,7 @@ export default function Home() {
               <div className="flex flex-wrap justify-center gap-4">
                 <a
                   href="mailto:sunlikeperson@gmail.com"
-                  className="px-8 py-3 from-purple-500 to-blue-500 text-white rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300"
+                  className="px-8 py-3 bg-linear-to-br from-purple-500 to-blue-500 text-white rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300"
                 >
                   Contact Me
                 </a>
