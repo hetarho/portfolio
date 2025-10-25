@@ -63,18 +63,18 @@ export function CodeComparison({
     const lines = codeBlock.code.trim().split("\n");
 
     return (
-      <div className="bg-gray-950 rounded-lg overflow-hidden border border-gray-800">
+      <div className="bg-gray-950 rounded-lg overflow-hidden border border-gray-800 min-w-0">
         {/* Header */}
-        <div className="bg-gray-900 px-4 py-2 border-b border-gray-800 flex items-center justify-between">
-          <div>
-            <div className="text-sm font-semibold text-gray-200">
+        <div className="bg-gray-900 px-4 py-2 border-b border-gray-800 flex items-center justify-between min-w-0">
+          <div className="flex-1 min-w-0 mr-2">
+            <div className="text-sm font-semibold text-gray-200 break-all">
               {codeBlock.title}
             </div>
             {codeBlock.subtitle && (
-              <div className="text-xs text-gray-500">{codeBlock.subtitle}</div>
+              <div className="text-xs text-gray-500 break-all">{codeBlock.subtitle}</div>
             )}
           </div>
-          <div className="flex gap-1.5">
+          <div className="flex gap-1.5 shrink-0">
             <div className="w-3 h-3 rounded-full bg-red-500" />
             <div className="w-3 h-3 rounded-full bg-yellow-500" />
             <div className="w-3 h-3 rounded-full bg-green-500" />
@@ -82,13 +82,12 @@ export function CodeComparison({
         </div>
 
         {/* Code Content */}
-        <div className="p-4 overflow-x-auto">
-          <pre className="text-sm font-mono">
+        <div className="p-4 overflow-x-auto min-w-0">
+          <pre className="text-sm font-mono min-w-0">
             {lines.map((line, index) => {
               const lineNumber = index + 1;
-              const isHighlighted = codeBlock.highlightLines?.includes(
-                lineNumber
-              );
+              const isHighlighted =
+                codeBlock.highlightLines?.includes(lineNumber);
 
               return (
                 <div
@@ -119,41 +118,43 @@ export function CodeComparison({
   };
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 min-w-0">
       {conflictDescription && (
         <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
           <div className="flex items-start gap-3">
             <span className="text-red-400 text-xl">⚠️</span>
-            <div className="flex-1">
+            <div className="flex-1 min-w-0">
               <div className="text-red-400 font-semibold mb-1">
                 Conflict Scenario
               </div>
-              <div className="text-gray-300 text-sm">{conflictDescription}</div>
+              <div className="text-gray-300 text-sm break-words">
+                {conflictDescription}
+              </div>
             </div>
           </div>
         </div>
       )}
 
       {/* Mobile: Tabs */}
-      <div className="md:hidden">
-        <div className="flex gap-2 mb-4">
+      <div className="md:hidden min-w-0">
+        <div className="flex gap-2 mb-4 min-w-0">
           <button
             onClick={() => setActiveTab("left")}
-            className={`flex-1 px-4 py-2 rounded-lg font-semibold transition-all ${getColorClasses(
+            className={`flex-1 px-4 py-2 rounded-lg font-semibold transition-all min-w-0 ${getColorClasses(
               left.labelColor,
               activeTab === "left"
             )}`}
           >
-            {left.labelIcon || "❌"} {left.label || "Before"}
+            <span className="truncate block">{left.labelIcon || "❌"} {left.label || "Before"}</span>
           </button>
           <button
             onClick={() => setActiveTab("right")}
-            className={`flex-1 px-4 py-2 rounded-lg font-semibold transition-all ${getColorClasses(
+            className={`flex-1 px-4 py-2 rounded-lg font-semibold transition-all min-w-0 ${getColorClasses(
               right.labelColor,
               activeTab === "right"
             )}`}
           >
-            {right.labelIcon || "✅"} {right.label || "After"}
+            <span className="truncate block">{right.labelIcon || "✅"} {right.label || "After"}</span>
           </button>
         </div>
 
@@ -161,8 +162,9 @@ export function CodeComparison({
       </div>
 
       {/* Desktop: Side by Side */}
-      <div className="hidden md:grid md:grid-cols-2 gap-6">
+      <div className="hidden md:grid md:grid-cols-2 gap-6 min-w-0">
         <motion.div
+          className="min-w-0"
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -188,6 +190,7 @@ export function CodeComparison({
         </motion.div>
 
         <motion.div
+          className="min-w-0"
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -215,4 +218,3 @@ export function CodeComparison({
     </div>
   );
 }
-

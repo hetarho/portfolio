@@ -5,7 +5,7 @@ export function ProjectsSection() {
   return (
     <section className="min-h-screen flex items-center justify-center px-6 py-20">
       <motion.div
-        className="max-w-5xl mx-auto"
+        className="max-w-5xl mx-auto w-full min-w-0"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
@@ -14,10 +14,10 @@ export function ProjectsSection() {
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center">
           Projects
         </h2>
-        <div className="space-y-8">
+        <div className="space-y-8 min-w-0">
           {/* SarcoFit */}
           <motion.div
-            className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10"
+            className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 min-w-0"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -38,11 +38,11 @@ export function ProjectsSection() {
             </div>
 
             {/* Problem Statement */}
-            <div className="mb-8">
+            <div className="mb-8 min-w-0">
               <h4 className="text-2xl font-bold text-red-400 mb-4">
                 🚨 Problem: 모노레포 병합 지옥
               </h4>
-              <div className="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
+              <div className="bg-red-900/20 rounded-xl p-6 border border-red-500/30 min-w-0">
                 <div className="space-y-4 text-gray-200">
                   <div className="flex items-start gap-3">
                     <span className="text-red-400 text-xl">→</span>
@@ -110,7 +110,7 @@ export function ProjectsSection() {
             </div>
 
             {/* Real Code Example: Conflict Scenario */}
-            <div className="mb-8">
+            <div className="mb-8 min-w-0">
               <h4 className="text-2xl font-bold text-white mb-4">
                 💥 실제 Conflict 발생 사례
               </h4>
@@ -180,7 +180,7 @@ export function ProjectsSection() {
             </div>
 
             {/* FSD Solution */}
-            <div className="mb-8">
+            <div className="mb-8 min-w-0">
               <h4 className="text-2xl font-bold text-white mb-4">
                 ✨ FSD 아키텍처로 해결
               </h4>
@@ -262,11 +262,11 @@ export function ExerciseDifficultyView({ exerciseId }: Props) {
             </div>
 
             {/* Architecture Overview */}
-            <div className="mb-8">
+            <div className="mb-8 min-w-0">
               <h4 className="text-2xl font-bold text-white mb-4">
                 🏗️ FSD 레이어 구조
               </h4>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 gap-6 min-w-0">
                 {/* Before */}
                 <div className="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
                   <div className="flex items-center gap-2 mb-4">
@@ -329,11 +329,11 @@ export function ExerciseDifficultyView({ exerciseId }: Props) {
             </div>
 
             {/* Development Process */}
-            <div className="mb-8">
+            <div className="mb-8 min-w-0">
               <h4 className="text-2xl font-bold text-white mb-4">
                 ⚙️ Solution: 개발 프로세스 개선
               </h4>
-              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30 min-w-0">
                 <div className="space-y-6">
                   {/* Step 1 */}
                   <div className="flex gap-4">
@@ -429,11 +429,11 @@ export function ExerciseDifficultyView({ exerciseId }: Props) {
             </div>
 
             {/* Additional Improvements */}
-            <div className="mb-8">
+            <div className="mb-8 min-w-0">
               <h4 className="text-2xl font-bold text-white mb-4">
                 🤖 AI 활용 생산성 향상
               </h4>
-              <div className="bg-purple-900/20 rounded-xl p-6 border border-purple-500/30">
+              <div className="bg-purple-900/20 rounded-xl p-6 border border-purple-500/30 min-w-0">
                 <p className="text-gray-300 mb-4">
                   FSD 레이어별로 명확한 규칙을 수립하고 AI 룰을 작성하여 팀
                   전체가 활용
@@ -474,11 +474,11 @@ export function ExerciseDifficultyView({ exerciseId }: Props) {
             </div>
 
             {/* Results */}
-            <div>
+            <div className="min-w-0">
               <h4 className="text-2xl font-bold text-white mb-4">
                 📈 Impact: 정량적 성과
               </h4>
-              <div className="grid md:grid-cols-3 gap-4">
+              <div className="grid md:grid-cols-3 gap-4 min-w-0">
                 <div className="bg-linear-to-br from-green-900/30 to-green-800/30 rounded-xl p-6 border border-green-500/30">
                   <div className="text-4xl font-bold text-green-300 mb-2">
                     80%↓
