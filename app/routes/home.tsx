@@ -109,6 +109,11 @@ export default function Home() {
                 </a>
               </div>
             </div>
+            <div className="mt-20">
+              <span className="text-5xl font-bold tracking-tighter bg-linear-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+                {'<Human />'}
+              </span>
+            </div>
             <p className="text-gray-400 mt-12 text-sm">
               © 2025 Haeram Lee. Built with React Router 7
             </p>

@@ -3,7 +3,7 @@ import { CodeComparison } from "../CodeComparison";
 
 export function ProjectsSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20">
+    <section className="flex items-center justify-center px-6 py-20">
       <motion.div
         className="max-w-5xl mx-auto w-full min-w-0"
         initial={{ opacity: 0, y: 50 }}
