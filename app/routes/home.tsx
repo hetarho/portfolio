@@ -7,7 +7,7 @@ export function meta({}: Route.MetaArgs) {
     { title: "이해람 | Frontend Engineer" },
     {
       name: "description",
-      content: "Product-focused Frontend Engineer with 6 years of experience",
+      content: "6년차 프론트엔드 엔지니어 - 사람을 위한 프로덕트를 만듭니다",
     },
   ];
 }
@@ -61,11 +61,10 @@ export default function Home() {
               </p>
 
               <p className="text-xl md:text-2xl text-purple-300 max-w-2xl mx-auto leading-relaxed">
-                코드를 넘어,{" "}
+                사람을 위한 프로덕트를 만드는{" "}
                 <span className="text-purple-400 font-semibold">
-                  사람을 위한 프로덕트
+                  프론트엔드 개발자
                 </span>
-                를 만듭니다
               </p>
             </motion.div>
           </div>
@@ -82,389 +81,337 @@ export default function Home() {
           >
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
-                Product Maker, Not Just a Coder
+                Introduce
               </h2>
               <div className="space-y-6 text-gray-200 text-lg leading-relaxed">
                 <p>
-                  저는{" "}
                   <span className="text-purple-300 font-semibold">
-                    '코드를 작성하는 개발자'
+                    6년차 프론트엔드 엔지니어
                   </span>
-                  를 넘어,
-                  <span className="text-blue-300 font-semibold">
-                    {" "}
-                    '프로덕트를 만드는 사람'
-                  </span>
-                  이라는 정체성으로 일합니다.
+                  로 30년의 업력을 가진 UI 프레임워크 개발 기업에서 기본기를 다진 뒤 
+                  헬스케어 스타트업에서 의료진 / 환자 / 고령자 대상의 애플리케이션을 
+                  개발/유지보수 하였습니다.
                 </p>
                 <p>
-                  저의 모든 실행 동기는{" "}
-                  <span className="text-purple-300 font-semibold">'사람'</span>
-                  에 대한 관심에서 출발합니다. 함께 일하는 동료의 문제를
-                  해결하고, 실제 사용자의 경험을 개선하는 것에 집중합니다.
+                  아키텍처에 정답은 없다고 생각하며{" "}
+                  <span className="text-blue-300 font-semibold">
+                    프로젝트의 목적, 개발팀의 리소스, 개발 기한을 고려하여 
+                    가장 적합한 아키텍처
+                  </span>
+                  를 설계하고 있습니다.
                 </p>
-                <div className="grid md:grid-cols-2 gap-6 mt-8 pt-8 border-t border-white/10">
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full" />
-                      <h3 className="text-xl font-semibold text-white">
-                        Developer Experience
-                      </h3>
-                    </div>
-                    <p className="text-gray-300 pl-5">
-                      복잡한 모노레포 환경에서 FSD 아키텍처 도입을 주도하여 개발
-                      병목을 해결
-                    </p>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full" />
-                      <h3 className="text-xl font-semibold text-white">
-                        User Experience
-                      </h3>
-                    </div>
-                    <p className="text-gray-300 pl-5">
-                      고령자 대상 앱 개발 시 현장 리서치를 수행하여 핵심 사용성
-                      문제를 발굴 및 개선
-                    </p>
-                  </div>
-                </div>
+                <p>
+                  저는 가장 중요한 업무에 가장 큰 에너지를 사용해야 한다는 원칙을 
+                  중요하게 생각합니다. 함께 일하는 동료들 역시 그렇게 할 수 있도록, 
+                  각자의 성향을 파악해{" "}
+                  <span className="text-purple-300 font-semibold">
+                    불필요한 감정 소모나 의사소통 피로감을 최소화하고 갈등을 해결
+                  </span>
+                  하는 것에 강점이 있습니다.
+                </p>
+                <p>
+                  AI는 사용하는 사람에 따라 생산성이 달라지기 때문에{" "}
+                  <span className="text-blue-300 font-semibold">
+                    AI 룰 작성이나 프롬프트 공유 등 AI를 활용한 팀 생산성 높이기
+                  </span>
+                  에 많은 고민을 합니다.
+                </p>
               </div>
             </div>
           </motion.div>
         </section>
 
-        {/* Case Study 1 */}
+        {/* Tech Stack Section */}
         <section className="min-h-screen flex items-center justify-center px-6 py-20">
           <motion.div
             className="max-w-5xl mx-auto"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.6 }}
           >
-            <motion.div
-              className="mb-12"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <span className="text-purple-400 font-mono text-sm tracking-wider">
-                CASE STUDY 01
-              </span>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mt-4 mb-6">
-                Maximizing Team Productivity through Developer Experience
-              </h2>
-              <p className="text-xl text-gray-300">
-                동료의 개발 경험(DX) 개선을 통한 팀 생산성 극대화
-              </p>
-            </motion.div>
-
-            <div className="space-y-8">
-              {/* The Motivation */}
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center">
+              Skills
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
               <motion.div
-                className="bg-linear-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-lg rounded-2xl p-8 border border-purple-500/20"
+                className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10"
                 initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <h3 className="text-2xl font-bold text-purple-300 mb-4">
+                  Languages
+                </h3>
+                <div className="flex flex-wrap gap-3">
+                  {["TypeScript", "Dart"].map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-4 py-2 bg-purple-500/20 text-purple-200 rounded-lg border border-purple-500/30"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+
+              <motion.div
+                className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10"
+                initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                <h3 className="text-2xl font-bold text-purple-300 mb-4">
-                  The Motivation
+                <h3 className="text-2xl font-bold text-blue-300 mb-4">
+                  Frameworks & Libraries
                 </h3>
-                <p className="text-gray-200 text-lg leading-relaxed mb-4">
-                  <span className="text-white font-semibold">
-                    "개발도 사람이 하는 일입니다."
-                  </span>
-                </p>
-                <p className="text-gray-300 leading-relaxed">
-                  저는 개발자의 불필요한 에너지 소모가 곧 프로덕트의 품질 저하로
-                  이어진다고 생각했습니다. 당시 React/Flutter 모노레포 환경은
-                  잦은 병합 충돌과 명확한 규칙이 없는 AI 코드 생성으로 인해,
-                  팀원들이 중요한 비즈니스 로직이 아닌 부수적인 문제에 과도한{" "}
-                  <span className="text-purple-300 font-semibold">
-                    인지적 부담(Cognitive Load)
-                  </span>
-                  을 겪고 있었습니다.
-                </p>
-                <p className="text-gray-300 leading-relaxed mt-4">
-                  저는 팀원들이 이러한 마찰에 에너지를 쏟는 대신,{" "}
-                  <span className="text-blue-300 font-semibold">
-                    '가장 가치 있는 일'
-                  </span>
-                  에만 집중할 수 있는 환경을 만드는 것을 목표로 삼았습니다.
-                </p>
+                <div className="flex flex-wrap gap-3">
+                  {[
+                    "React",
+                    "Next.js",
+                    "Flutter",
+                    "Tanstack-Router",
+                    "Tailwind",
+                  ].map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-4 py-2 bg-blue-500/20 text-blue-200 rounded-lg border border-blue-500/30"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </motion.div>
 
-              {/* My Action */}
               <motion.div
-                className="bg-linear-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-lg rounded-2xl p-8 border border-blue-500/20"
-                initial={{ opacity: 0, x: 30 }}
+                className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10"
+                initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                <h3 className="text-2xl font-bold text-blue-300 mb-6">
-                  My Action
+                <h3 className="text-2xl font-bold text-purple-300 mb-4">
+                  State Management
                 </h3>
-                <div className="space-y-6">
-                  <div>
-                    <h4 className="text-xl font-semibold text-white mb-3 flex items-center gap-2">
-                      <span className="text-blue-400">▸</span>
-                      FSD Architecture Implementation
-                    </h4>
-                    <p className="text-gray-300 leading-relaxed pl-6">
-                      기존의 역할 중심 아키텍처가 잦은 충돌의 원인임을 진단,
-                      기능 중심의{" "}
-                      <span className="text-blue-300 font-semibold">
-                        FSD(Feature-Sliced Design) 아키텍처
-                      </span>{" "}
-                      도입을 주도했습니다. 또한{" "}
-                      <span className="text-purple-300 font-semibold">
-                        '설계 우선 개발'
-                      </span>{" "}
-                      프로세스를 정립하여 충돌 지점을 사전에 최소화했습니다.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-semibold text-white mb-3 flex items-center gap-2">
-                      <span className="text-blue-400">▸</span>
-                      AI Development Standards
-                    </h4>
-                    <p className="text-gray-300 leading-relaxed pl-6">
-                      FSD의 각 레이어(shared, entities 등)별로 명확한 설계
-                      규칙과 AI 생성 가이드라인(
-                      <span className="text-blue-300 font-semibold">
-                        "AI 룰"
-                      </span>
-                      )을 수립하여 코드의 일관성과 예측 가능성을 높였습니다.
-                    </p>
-                  </div>
+                <div className="flex flex-wrap gap-3">
+                  {["Zustand", "Bloc", "Tanstack-Query"].map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-4 py-2 bg-purple-500/20 text-purple-200 rounded-lg border border-purple-500/30"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
               </motion.div>
 
-              {/* The Result */}
               <motion.div
-                className="bg-linear-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-lg rounded-2xl p-8 border border-purple-500/20"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10"
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
-                <h3 className="text-2xl font-bold text-purple-300 mb-6">
-                  The Result
+                <h3 className="text-2xl font-bold text-blue-300 mb-4">
+                  Tools & Platforms
                 </h3>
-                <div className="grid md:grid-cols-2 gap-6 mb-6">
-                  <div className="bg-black/20 rounded-xl p-6 border border-purple-500/20">
-                    <div className="text-5xl font-bold text-purple-300 mb-2">
-                      80%
-                    </div>
-                    <div className="text-gray-300">
-                      프론트엔드 병합 충돌 감소
-                    </div>
-                  </div>
-                  <div className="bg-black/20 rounded-xl p-6 border border-blue-500/20">
-                    <div className="text-5xl font-bold text-blue-300 mb-2">
-                      3.5x
-                    </div>
-                    <div className="text-gray-300">
-                      AI 코드 채택률 향상 (20% → 70%)
-                    </div>
-                  </div>
+                <div className="flex flex-wrap gap-3">
+                  {["pnpm", "gRPC", "Firebase", "Git", "Figma"].map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-4 py-2 bg-blue-500/20 text-blue-200 rounded-lg border border-blue-500/30"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
-                <p className="text-gray-300 leading-relaxed">
-                  개발자들이 불필요한 코드 충돌과 파편화된 규칙을 신경 쓰지
-                  않고,
-                  <span className="text-purple-300 font-semibold">
-                    {" "}
-                    '중요한 프로덕트 개발에만 온전히 힘을 쏟을 수 있는'
-                  </span>{" "}
-                  개발 환경을 구축하여 팀 생산성을 극대화했습니다.
-                </p>
               </motion.div>
             </div>
           </motion.div>
         </section>
 
-        {/* Case Study 2 */}
+        {/* Projects Overview */}
         <section className="min-h-screen flex items-center justify-center px-6 py-20">
           <motion.div
             className="max-w-5xl mx-auto"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.6 }}
           >
-            <motion.div
-              className="mb-12"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <span className="text-purple-400 font-mono text-sm tracking-wider">
-                CASE STUDY 02
-              </span>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mt-4 mb-6">
-                Solving Core Usability Issues through Field Research
-              </h2>
-              <p className="text-xl text-gray-300">
-                현장 리서치를 통한 핵심 사용성(UX) 문제 해결
-              </p>
-            </motion.div>
-
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center">
+              Projects
+            </h2>
             <div className="space-y-8">
-              {/* The Opportunity */}
+              {/* SarcoFit */}
               <motion.div
-                className="bg-linear-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-lg rounded-2xl p-8 border border-purple-500/20"
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              >
-                <h3 className="text-2xl font-bold text-purple-300 mb-4">
-                  The Opportunity
-                </h3>
-                <p className="text-gray-200 text-lg leading-relaxed mb-4">
-                  <span className="text-white font-semibold">
-                    "개발자의 가설을 넘어, 사용자의 현실을 마주하다."
-                  </span>
-                </p>
-                <p className="text-gray-300 leading-relaxed">
-                  고령자 대상 근감소증 앱 개발 완료 후, 복지관에 앱 설치를
-                  지원하는 역할로 방문했습니다. 저는 이것을 개발팀의 가설과{" "}
-                  <span className="text-purple-300 font-semibold">
-                    '실제 사용자의 현실'
-                  </span>
-                  을 직접 검증할 수 있는 핵심 기회로 판단했습니다. 코드를 넘어
-                  실제 사용자의 목소리를 듣기 위해 현장에서 즉각적인 UX 리서치를
-                  주도했습니다.
-                </p>
-              </motion.div>
-
-              {/* Key Findings */}
-              <motion.div
-                className="bg-linear-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-lg rounded-2xl p-8 border border-blue-500/20"
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-              >
-                <h3 className="text-2xl font-bold text-blue-300 mb-6">
-                  Key Findings: 가설 vs 현실
-                </h3>
-                <div className="space-y-4">
-                  {[
-                    {
-                      title: "Interaction Patterns",
-                      assumption:
-                        "'스크롤', '스와이프' 같은 스마트폰의 기본 조작",
-                      reality:
-                        "사용자는 해당 제스처 자체에 익숙하지 않아 숨겨진 콘텐츠에 전혀 접근하지 못함",
-                    },
-                    {
-                      title: "Icon Recognition",
-                      assumption:
-                        "개발팀에게 '기본적인' 아이콘 (햄버거 메뉴, 톱니바퀴 설정)",
-                      reality: "사용자는 그 의미를 전혀 해석하지 못함",
-                    },
-                    {
-                      title: "Color Psychology",
-                      assumption: "버튼 강조를 위한 '빨간색'",
-                      reality:
-                        "사용자는 '위험/경고' 신호로 인식해 절대 클릭하지 않음",
-                    },
-                    {
-                      title: "Flow Understanding",
-                      assumption: "순서가 있는 리스트 형식의 화면",
-                      reality:
-                        "사용자는 이를 순차적으로 진행해야 한다는 맥락을 인식하지 못함",
-                    },
-                    {
-                      title: "Information Overload",
-                      assumption: "여러 요소가 한 화면에 배치된 경우",
-                      reality:
-                        "사용자는 무엇을 해야 할지 몰라 압도당했으며, 로딩 스피너를 버튼으로 오인해 계속 클릭",
-                    },
-                  ].map((finding, idx) => (
-                    <div
-                      key={idx}
-                      className="bg-black/20 rounded-xl p-5 border border-blue-500/10"
-                    >
-                      <h4 className="text-lg font-semibold text-white mb-3">
-                        {finding.title}
-                      </h4>
-                      <div className="space-y-2 text-sm">
-                        <div className="flex gap-3">
-                          <span className="text-gray-400 shrink-0">가설:</span>
-                          <span className="text-gray-300">
-                            {finding.assumption}
-                          </span>
-                        </div>
-                        <div className="flex gap-3">
-                          <span className="text-blue-300 shrink-0">현실:</span>
-                          <span className="text-blue-200">
-                            {finding.reality}
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-
-              {/* The Result */}
-              <motion.div
-                className="bg-linear-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-lg rounded-2xl p-8 border border-purple-500/20"
+                className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <h3 className="text-2xl font-bold text-purple-300 mb-6">
-                  The Result
-                </h3>
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                  <div>
+                    <h3 className="text-3xl font-bold text-white mb-2">
+                      SarcoFit
+                    </h3>
+                    <p className="text-gray-400">
+                      근감소증 치료를 위한 디지털 치료기기(DTx)
+                    </p>
+                  </div>
+                  <div className="text-purple-300 font-mono mt-2 md:mt-0">
+                    2024.10 - 현재
+                  </div>
+                </div>
                 <div className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="bg-black/20 rounded-xl p-6 border border-purple-500/20">
-                      <div className="text-sm font-mono text-purple-400 mb-2">
-                        BEFORE
+                  <div>
+                    <h4 className="text-xl font-semibold text-purple-300 mb-3">
+                      개발경험 개선을 통한 팀 생산성 향상
+                    </h4>
+                    <div className="space-y-3 text-gray-300">
+                      <div>
+                        <span className="text-white font-semibold">문제:</span>{" "}
+                        모노레포 환경에서 잦은 conflict로 인해 팀원들이 중요한 
+                        비즈니스 로직이 아닌 부수적인 문제에 과도한 인지적 부담
                       </div>
-                      <ul className="space-y-2 text-gray-300 text-sm">
-                        <li>• 스크롤이 필요한 긴 화면</li>
-                        <li>• 의미 전달이 안 되는 아이콘 버튼</li>
-                        <li>• 숨겨진 네비게이션</li>
-                        <li>• 암묵적인 사용자 흐름</li>
-                      </ul>
+                      <div>
+                        <span className="text-white font-semibold">해결:</span>{" "}
+                        FSD 아키텍처 도입 및 설계 우선 개발 프로세스 수립
+                      </div>
+                      <div className="flex flex-wrap gap-4 pt-4">
+                        <div className="bg-purple-500/20 px-4 py-2 rounded-lg border border-purple-500/30">
+                          <span className="text-purple-300 font-bold text-2xl">
+                            80%↓
+                          </span>
+                          <span className="text-gray-300 text-sm ml-2">
+                            Conflict 감소
+                          </span>
+                        </div>
+                        <div className="bg-purple-500/20 px-4 py-2 rounded-lg border border-purple-500/30">
+                          <span className="text-purple-300 font-bold text-2xl">
+                            70%
+                          </span>
+                          <span className="text-gray-300 text-sm ml-2">
+                            AI 코드 채택률 (from 20%)
+                          </span>
+                        </div>
+                      </div>
                     </div>
-                    <div className="bg-black/20 rounded-xl p-6 border border-blue-500/20">
-                      <div className="text-sm font-mono text-blue-400 mb-2">
-                        AFTER
-                      </div>
-                      <ul className="space-y-2 text-gray-300 text-sm">
-                        <li>• 한 화면에 모든 정보 표시</li>
-                        <li>• 아이콘 + 텍스트 레이블 병기</li>
-                        <li>• 명시적인 '다음' 버튼 배치</li>
-                        <li>• 단계별 명확한 가이드</li>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-blue-300 mb-3">
+                      컴포넌트 분리 규칙을 명확히하여 코드 품질 향상
+                    </h4>
+                    <div className="space-y-2 text-gray-300">
+                      <p>
+                        레이어별 명확한 규칙 수립 및 AI 룰 작성으로 팀 전체의 
+                        개발 일관성 확보
+                      </p>
+                      <ul className="list-disc list-inside space-y-1 pl-4 text-sm">
+                        <li>entity: 순수 UI 컴포넌트</li>
+                        <li>widget/page: Data fetching</li>
+                        <li>useContainer: mutation 및 상태 관리</li>
                       </ul>
                     </div>
                   </div>
-                  <p className="text-gray-300 leading-relaxed">
-                    기술 중심의 '세련된 UI'가 아닌, 사용자 중심의{" "}
-                    <span className="text-purple-300 font-semibold">
-                      '명확하고 쉬운 UI'
-                    </span>
-                    로 제품을 전면 개선하여 고령 사용자의 앱 접근성을 실질적으로
-                    높였습니다.
-                  </p>
-                  <div className="bg-purple-500/10 rounded-xl p-6 border border-purple-500/20">
-                    <p className="text-white font-semibold text-lg">
-                      단순히 버그를 고치는 개발자가 아닌, 사용자의 문제를 찾아
-                      해결하는{" "}
-                      <span className="text-purple-300">'프로덕트 메이커'</span>
-                      로서의 역할을 완수했습니다.
+                </div>
+              </motion.div>
+
+              {/* 화푸리 */}
+              <motion.div
+                className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                  <div>
+                    <h3 className="text-3xl font-bold text-white mb-2">
+                      화푸리
+                    </h3>
+                    <p className="text-gray-400">
+                      화병 치료를 위한 디지털 치료기기(DTx)
                     </p>
+                  </div>
+                  <div className="text-blue-300 font-mono mt-2 md:mt-0">
+                    2024.06 - 2025.08
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-blue-300 mb-3">
+                    동료와 함께 성장하는 개발자
+                  </h4>
+                  <div className="space-y-3 text-gray-300">
+                    <p>
+                      영상 디자이너와 모바일 앱 개발을 진행하며 피그마에 익숙하지 
+                      않은 디자이너를 지원하고 협업 방식을 개선
+                    </p>
+                    <div className="bg-blue-500/10 rounded-lg p-4 border border-blue-500/20">
+                      <p className="text-white">
+                        부정적 피드백 대신 구체적인 개선 방안을 제시하며 
+                        디자이너의 성장을 지원. 결과적으로 6개월간 협업 후 
+                        디자인 전달 방식 관련 피드백이 50% 이상 감소
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* MyVivache */}
+              <motion.div
+                className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+              >
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                  <div>
+                    <h3 className="text-3xl font-bold text-white mb-2">
+                      MyVivache
+                    </h3>
+                    <p className="text-gray-400">
+                      고령자 대상 운동 애플리케이션
+                    </p>
+                  </div>
+                  <div className="text-purple-300 font-mono mt-2 md:mt-0">
+                    2023.01 - 2023.10
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-purple-300 mb-3">
+                    주도적인 UX 리서치를 통한 프로덕트 품질 향상
+                  </h4>
+                  <div className="space-y-3 text-gray-300">
+                    <p>
+                      어르신 복지관 현장에서 직접 사용자 인터뷰 및 UX 테스트를 
+                      주도하여 고령자 친화적 UI/UX 개선
+                    </p>
+                    <div className="grid md:grid-cols-2 gap-4 mt-4">
+                      <div className="bg-purple-500/10 rounded-lg p-4 border border-purple-500/20">
+                        <h5 className="text-white font-semibold mb-2">
+                          발견한 문제
+                        </h5>
+                        <ul className="space-y-1 text-sm">
+                          <li>• 아이콘 의미 해석 불가</li>
+                          <li>• 붉은 색상을 경고로 인식</li>
+                          <li>• 버튼 인식 불가</li>
+                          <li>• 순차 흐름 이해 부족</li>
+                        </ul>
+                      </div>
+                      <div className="bg-purple-500/10 rounded-lg p-4 border border-purple-500/20">
+                        <h5 className="text-white font-semibold mb-2">
+                          개선 결과
+                        </h5>
+                        <p className="text-sm">
+                          기획팀과 긴밀히 소통하여 고령자 친화적인 애플리케이션 
+                          완성. 연구 결과는 논문에도 기재됨
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -483,26 +430,17 @@ export default function Home() {
           >
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-12 border border-white/10">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Let's Build Something Great Together
+                Contact
               </h2>
               <p className="text-gray-300 text-lg mb-8">
-                기술을 통해 동료의 성과와 사용자의 경험을 실질적으로 향상시키는
-                개발자입니다.
+                사람을 위한 프로덕트를 함께 만들어갈 개발자입니다
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <a
                   href="mailto:sunlikeperson@gmail.com"
                   className="px-8 py-3 bg-linear-to-br from-purple-500 to-blue-500 text-white rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300"
                 >
-                  Contact Me
-                </a>
-                <a
-                  href="https://github.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-8 py-3 bg-white/10 text-white rounded-full font-semibold hover:bg-white/20 transition-all duration-300 border border-white/20"
-                >
-                  GitHub
+                  sunlikeperson@gmail.com
                 </a>
               </div>
             </div>
