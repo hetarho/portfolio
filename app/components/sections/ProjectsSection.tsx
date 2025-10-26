@@ -515,6 +515,657 @@ export function ExerciseDifficultyView({ exerciseId }: Props) {
               </div>
             </div>
           </motion.div>
+
+          {/* 화푸리 */}
+          <motion.div
+            className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 min-w-0"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+              <div>
+                <h3 className="text-3xl font-bold text-white mb-2">화푸리</h3>
+                <p className="text-gray-400">
+                  화병 치료를 위한 디지털 치료기기(DTx)
+                </p>
+              </div>
+              <div className="text-purple-300 font-mono mt-2 md:mt-0">
+                2024.06 - 2025.08
+              </div>
+            </div>
+
+            {/* Problem Statement */}
+            <div className="mb-8 min-w-0">
+              <h4 className="text-2xl font-bold text-red-400 mb-4">
+                🚨 Problem: 협업 파트너의 도구 미숙련
+              </h4>
+              <div className="bg-red-900/20 rounded-xl p-6 border border-red-500/30 min-w-0">
+                <div className="space-y-4 text-gray-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-red-400 text-xl">→</span>
+                    <div>
+                      <p className="font-semibold text-white mb-1">
+                        리소스 제약 속 협업
+                      </p>
+                      <p className="text-sm">
+                        사이드 프로젝트로 리소스가 제한된 상황에서 Figma에
+                        익숙하지 않은 영상 디자이너와 앱 개발 진행
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-red-400 text-xl">→</span>
+                    <div>
+                      <p className="font-semibold text-white mb-1">
+                        디자인 전달의 어려움
+                      </p>
+                      <p className="text-sm">
+                        초기 디자인이 개발하기 어려운 형태로 전달되어 반복적인
+                        수정 필요
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Solution */}
+            <div className="mb-8 min-w-0">
+              <h4 className="text-2xl font-bold text-white mb-4">
+                ✨ 동료 성장을 돕는 협업 방식
+              </h4>
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30 min-w-0">
+                <div className="space-y-6">
+                  <div className="flex gap-4">
+                    <div className="shrink-0 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                      1
+                    </div>
+                    <div className="flex-1">
+                      <h5 className="text-lg font-semibold text-blue-300 mb-2">
+                        심리적 안전감 제공
+                      </h5>
+                      <p className="text-gray-300 text-sm">
+                        "어떻게 주셔도 개발할 수 있으니 괜찮아요"라며 디자이너가
+                        도전할 수 있도록 동기부여
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="border-l-2 border-blue-500/30 ml-6 h-8" />
+
+                  <div className="flex gap-4">
+                    <div className="shrink-0 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                      2
+                    </div>
+                    <div className="flex-1">
+                      <h5 className="text-lg font-semibold text-blue-300 mb-2">
+                        긍정적 피드백 방식
+                      </h5>
+                      <p className="text-gray-300 text-sm mb-2">
+                        "이렇게 하면 안 돼요" 대신 "이렇게 해주시면 개발이 더
+                        수월해요"로 구체적 개선 방향 제시
+                      </p>
+                      <div className="bg-blue-950/50 rounded-lg p-3 text-xs">
+                        <div className="text-blue-300 mb-1">예시:</div>
+                        <div className="text-gray-400">
+                          ❌ "컴포넌트가 너무 복잡해서 개발이 어려워요"
+                        </div>
+                        <div className="text-green-400 mt-1">
+                          ✅ "반복되는 요소를 컴포넌트로 만들어주시면 개발이
+                          빨라져요. 이런 식으로요..."
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="border-l-2 border-blue-500/30 ml-6 h-8" />
+
+                  <div className="flex gap-4">
+                    <div className="shrink-0 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                      3
+                    </div>
+                    <div className="flex-1">
+                      <h5 className="text-lg font-semibold text-blue-300 mb-2">
+                        UI/UX 공동 토의
+                      </h5>
+                      <p className="text-gray-300 text-sm">
+                        디자이너와 활발히 소통하며 함께 앱의 사용자 경험을
+                        개선
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Results */}
+            <div className="min-w-0">
+              <h4 className="text-2xl font-bold text-white mb-4">
+                📈 Impact: 상호 성장
+              </h4>
+              <div className="grid md:grid-cols-3 gap-4 min-w-0">
+                <div className="bg-linear-to-br from-green-900/30 to-green-800/30 rounded-xl p-6 border border-green-500/30">
+                  <div className="text-4xl font-bold text-green-300 mb-2">
+                    100%
+                  </div>
+                  <div className="text-white font-semibold mb-1">
+                    일정 준수율
+                  </div>
+                  <div className="text-xs text-gray-400">
+                    매달 정기 회의 일정 모두 달성
+                  </div>
+                </div>
+                <div className="bg-linear-to-br from-blue-900/30 to-blue-800/30 rounded-xl p-6 border border-blue-500/30">
+                  <div className="text-4xl font-bold text-blue-300 mb-2">
+                    50%↓
+                  </div>
+                  <div className="text-white font-semibold mb-1">
+                    디자인 피드백 감소
+                  </div>
+                  <div className="text-xs text-gray-400">
+                    6개월 후 디자이너의 Figma 숙련도 향상
+                  </div>
+                </div>
+                <div className="bg-linear-to-br from-purple-900/30 to-purple-800/30 rounded-xl p-6 border border-purple-500/30">
+                  <div className="text-4xl font-bold text-purple-300 mb-2">
+                    ↑↑
+                  </div>
+                  <div className="text-white font-semibold mb-1">
+                    UI/UX 역량 향상
+                  </div>
+                  <div className="text-xs text-gray-400">
+                    개발자의 디자인 감각과 지식 성장
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* MyVivache */}
+          <motion.div
+            className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 min-w-0"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+              <div>
+                <h3 className="text-3xl font-bold text-white mb-2">
+                  MyVivache
+                </h3>
+                <p className="text-gray-400">
+                  고령자 대상 운동 애플리케이션
+                </p>
+              </div>
+              <div className="text-purple-300 font-mono mt-2 md:mt-0">
+                2023.01 - 2023.10
+              </div>
+            </div>
+
+            {/* Problem Statement */}
+            <div className="mb-8 min-w-0">
+              <h4 className="text-2xl font-bold text-red-400 mb-4">
+                🚨 Problem: 불명확한 아키텍처
+              </h4>
+              <div className="bg-red-900/20 rounded-xl p-6 border border-red-500/30 min-w-0">
+                <div className="space-y-4 text-gray-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-red-400 text-xl">→</span>
+                    <div>
+                      <p className="font-semibold text-white mb-1">
+                        개발 철학의 부재
+                      </p>
+                      <p className="text-sm">
+                        명확한 아키텍처 패턴이 없어 개발자마다 비즈니스 로직을
+                        다른 위치에 작성
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-red-400 text-xl">→</span>
+                    <div>
+                      <p className="font-semibold text-white mb-1">
+                        유지보수의 어려움
+                      </p>
+                      <p className="text-sm">
+                        코드의 일관성 저하로 동료 간 코드 이해와 유지보수에
+                        불필요한 비용 발생
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Clean Architecture Solution */}
+            <div className="mb-8 min-w-0">
+              <h4 className="text-2xl font-bold text-white mb-4">
+                🏗️ Clean Architecture 도입
+              </h4>
+              <div className="grid md:grid-cols-2 gap-6 min-w-0">
+                {/* Before */}
+                <div className="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="text-2xl">❌</span>
+                    <h5 className="text-xl font-bold text-red-300">
+                      BEFORE: 비즈니스 로직 분산
+                    </h5>
+                  </div>
+                  <div className="space-y-3 text-sm">
+                    <div className="bg-red-950/50 rounded-lg p-3">
+                      <div className="text-red-300 font-semibold mb-1">
+                        문제점
+                      </div>
+                      <ul className="text-gray-400 text-xs space-y-1">
+                        <li>• Widget에 비즈니스 로직 혼재</li>
+                        <li>• API 호출이 여러 곳에 분산</li>
+                        <li>• 테스트가 어려운 구조</li>
+                        <li>• 재사용성 낮음</li>
+                      </ul>
+                    </div>
+                    <div className="font-mono text-xs text-gray-400">
+                      <div>lib/</div>
+                      <div className="pl-3">├── screens/</div>
+                      <div className="pl-6 text-red-300">⚠️ 로직 혼재</div>
+                      <div className="pl-3">└── widgets/</div>
+                      <div className="pl-6 text-red-300">⚠️ API 직접 호출</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* After */}
+                <div className="bg-green-900/20 rounded-xl p-6 border border-green-500/30">
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="text-2xl">✅</span>
+                    <h5 className="text-xl font-bold text-green-300">
+                      AFTER: Clean Architecture
+                    </h5>
+                  </div>
+                  <div className="space-y-3 text-sm">
+                    <div className="bg-green-950/50 rounded-lg p-3">
+                      <div className="text-green-300 font-semibold mb-1">
+                        개선점
+                      </div>
+                      <ul className="text-gray-400 text-xs space-y-1">
+                        <li>• 도메인 로직과 UI 분리</li>
+                        <li>• Repository 패턴으로 데이터 계층 추상화</li>
+                        <li>• 테스트 용이한 구조</li>
+                        <li>• 높은 재사용성</li>
+                      </ul>
+                    </div>
+                    <div className="font-mono text-xs text-gray-400">
+                      <div>lib/</div>
+                      <div className="pl-3">├── domain/</div>
+                      <div className="pl-6 text-green-300">✓ 비즈니스 로직</div>
+                      <div className="pl-3">├── data/</div>
+                      <div className="pl-6 text-blue-300">✓ Repository</div>
+                      <div className="pl-3">└── presentation/</div>
+                      <div className="pl-6 text-purple-300">✓ UI만</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Code Example */}
+            <div className="mb-8 min-w-0">
+              <h4 className="text-2xl font-bold text-white mb-4">
+                💡 Repository Pattern 적용
+              </h4>
+              <CodeComparison
+                conflictDescription="데이터 소스를 추상화하여 비즈니스 로직과 데이터 계층 분리"
+                left={{
+                  title: "presentation/screens/exercise_screen.dart",
+                  subtitle: "UI Layer - 순수하게 UI만 담당",
+                  code: `class ExerciseScreen extends StatelessWidget {
+  final ExerciseRepository repository;
+  
+  @override
+  Widget build(BuildContext context) {
+    return FutureBuilder<List<Exercise>>(
+      future: repository.getExercises(),
+      builder: (context, snapshot) {
+        if (!snapshot.hasData) {
+          return CircularProgressIndicator();
+        }
+        
+        return ListView.builder(
+          itemCount: snapshot.data!.length,
+          itemBuilder: (context, index) {
+            return ExerciseCard(
+              exercise: snapshot.data![index],
+            );
+          },
+        );
+      },
+    );
+  }
+}`,
+                  highlightLines: [2, 6],
+                  label: "Presentation",
+                  labelIcon: "🎨",
+                  labelColor: "purple",
+                }}
+                right={{
+                  title: "data/repositories/exercise_repository_impl.dart",
+                  subtitle: "Data Layer - 데이터 소스 관리",
+                  code: `class ExerciseRepositoryImpl implements ExerciseRepository {
+  final RemoteDataSource remoteDataSource;
+  final LocalDataSource localDataSource;
+  
+  @override
+  Future<List<Exercise>> getExercises() async {
+    try {
+      // 원격 데이터 먼저 시도
+      final exercises = await remoteDataSource.fetchExercises();
+      
+      // 로컬에 캐싱
+      await localDataSource.cacheExercises(exercises);
+      
+      return exercises;
+    } catch (e) {
+      // 실패 시 로컬 데이터 사용
+      return await localDataSource.getCachedExercises();
+    }
+  }
+}`,
+                  highlightLines: [2, 3, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+                  label: "Data",
+                  labelIcon: "💾",
+                  labelColor: "blue",
+                }}
+              />
+            </div>
+
+            {/* UX Research */}
+            <div className="mb-8 min-w-0">
+              <h4 className="text-2xl font-bold text-white mb-4">
+                🔍 주도적인 UX 리서치
+              </h4>
+              <div className="bg-purple-900/20 rounded-xl p-6 border border-purple-500/30 min-w-0">
+                <p className="text-gray-300 mb-4">
+                  어르신 복지관 방문 시 앱 설치 역할에서 더 나아가 직접 사용자
+                  인터뷰 진행
+                </p>
+                <div className="space-y-3">
+                  <div className="bg-purple-950/50 rounded-lg p-4">
+                    <div className="text-purple-300 font-semibold mb-2">
+                      🗣️ 발견한 UX 이슈들
+                    </div>
+                    <ul className="text-gray-400 text-sm space-y-2">
+                      <li>• 아이콘의 의미를 해석하지 못함</li>
+                      <li>
+                        • 붉은 계열의 색상을 무조건 경고로 받아들임
+                      </li>
+                      <li>
+                        • 버튼이 일반적인 형태와 다르면 버튼이라는 인식을 못함
+                      </li>
+                      <li>
+                        • 순서가 있는 리스트에서 순차적으로 해야한다는 사실
+                        인지 못함
+                      </li>
+                      <li>
+                        • 버튼이 2개 이상이면 어떤 버튼을 클릭해야하는지 혼란
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="bg-green-950/50 rounded-lg p-4 border border-green-500/30">
+                    <div className="text-green-300 font-semibold mb-2">
+                      ✅ 개선 결과
+                    </div>
+                    <p className="text-gray-400 text-sm mb-2">
+                      기획팀과 긴밀히 소통하여 고령자 친화적인 UI/UX로 개선
+                    </p>
+                    <a
+                      href="https://www.mdpi.com/1424-8220/25/12/3674"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:text-blue-300 text-xs underline"
+                    >
+                      📄 연구 결과가 논문에 기재됨 →
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Results */}
+            <div className="min-w-0">
+              <h4 className="text-2xl font-bold text-white mb-4">
+                📈 Impact: 개발 문화와 프로덕트 품질 향상
+              </h4>
+              <div className="grid md:grid-cols-2 gap-4 min-w-0">
+                <div className="bg-linear-to-br from-green-900/30 to-green-800/30 rounded-xl p-6 border border-green-500/30">
+                  <div className="text-4xl font-bold text-green-300 mb-2">
+                    ✓
+                  </div>
+                  <div className="text-white font-semibold mb-1">
+                    유지보수성 향상
+                  </div>
+                  <div className="text-xs text-gray-400">
+                    도메인 로직과 UI 분리로 코드 이해도 증가
+                  </div>
+                </div>
+                <div className="bg-linear-to-br from-blue-900/30 to-blue-800/30 rounded-xl p-6 border border-blue-500/30">
+                  <div className="text-4xl font-bold text-blue-300 mb-2">
+                    100%
+                  </div>
+                  <div className="text-white font-semibold mb-1">
+                    팀 전체 적용
+                  </div>
+                  <div className="text-xs text-gray-400">
+                    모든 팀원이 동일한 구조로 개발
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* MyVivache MVP */}
+          <motion.div
+            className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 min-w-0"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+              <div>
+                <h3 className="text-3xl font-bold text-white mb-2">
+                  MyVivache (MVP)
+                </h3>
+                <p className="text-gray-400">
+                  고령자 대상 운동 애플리케이션 MVP 버전
+                </p>
+              </div>
+              <div className="text-purple-300 font-mono mt-2 md:mt-0">
+                2022.08 - 2022.12
+              </div>
+            </div>
+
+            {/* Problem Statement */}
+            <div className="mb-8 min-w-0">
+              <h4 className="text-2xl font-bold text-red-400 mb-4">
+                🚨 Challenge: 미경험 기술 스택
+              </h4>
+              <div className="bg-red-900/20 rounded-xl p-6 border border-red-500/30 min-w-0">
+                <div className="space-y-4 text-gray-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-red-400 text-xl">→</span>
+                    <div>
+                      <p className="font-semibold text-white mb-1">
+                        Flutter 경험 전무
+                      </p>
+                      <p className="text-sm">
+                        React 기반 웹 서비스 유지보수 중, 신규 앱 프로젝트를
+                        Flutter로 개발해야 하는 상황
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-red-400 text-xl">→</span>
+                    <div>
+                      <p className="font-semibold text-white mb-1">
+                        빠른 MVP 개발 필요
+                      </p>
+                      <p className="text-sm">
+                        프로덕트 출시를 위해 단기간 내 학습과 개발을 병행해야
+                        함
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Solution */}
+            <div className="mb-8 min-w-0">
+              <h4 className="text-2xl font-bold text-white mb-4">
+                💡 기술은 프로덕트를 위한 것
+              </h4>
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30 min-w-0">
+                <p className="text-gray-300 mb-4 text-lg font-semibold">
+                  "프로덕트의 성공을 위해서는 기술 스택이 장벽이 되어서는 안
+                  된다"
+                </p>
+                <div className="space-y-6">
+                  <div className="flex gap-4">
+                    <div className="shrink-0 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                      1
+                    </div>
+                    <div className="flex-1">
+                      <h5 className="text-lg font-semibold text-blue-300 mb-2">
+                        빠른 학습
+                      </h5>
+                      <p className="text-gray-300 text-sm">
+                        Dart 언어와 Flutter 생태계를 즉시 학습 시작. 기존 모바일
+                        앱 개발 경험과 웹 개발 지식을 활용
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="border-l-2 border-blue-500/30 ml-6 h-8" />
+
+                  <div className="flex gap-4">
+                    <div className="shrink-0 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                      2
+                    </div>
+                    <div className="flex-1">
+                      <h5 className="text-lg font-semibold text-blue-300 mb-2">
+                        학습과 개발 병행
+                      </h5>
+                      <p className="text-gray-300 text-sm">
+                        이론 학습과 동시에 MVP 개발을 진행하며 실전적인 문제
+                        해결에 집중
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="border-l-2 border-blue-500/30 ml-6 h-8" />
+
+                  <div className="flex gap-4">
+                    <div className="shrink-0 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                      3
+                    </div>
+                    <div className="flex-1">
+                      <h5 className="text-lg font-semibold text-blue-300 mb-2">
+                        프로덕트 중심 사고
+                      </h5>
+                      <p className="text-gray-300 text-sm">
+                        기술 자체보다 사용자와 프로덕트의 가치를 우선순위로 두고
+                        개발
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Tech Stack Comparison */}
+            <div className="mb-8 min-w-0">
+              <h4 className="text-2xl font-bold text-white mb-4">
+                🚀 Flutter 학습 여정
+              </h4>
+              <div className="grid md:grid-cols-3 gap-4 min-w-0">
+                <div className="bg-orange-900/20 rounded-xl p-6 border border-orange-500/30">
+                  <div className="text-3xl mb-3">📚</div>
+                  <div className="text-orange-300 font-semibold mb-2">
+                    Week 1-2
+                  </div>
+                  <ul className="text-gray-400 text-sm space-y-1">
+                    <li>• Dart 기본 문법</li>
+                    <li>• Widget 개념 이해</li>
+                    <li>• 상태 관리 기초</li>
+                  </ul>
+                </div>
+                <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+                  <div className="text-3xl mb-3">🛠️</div>
+                  <div className="text-blue-300 font-semibold mb-2">
+                    Week 3-8
+                  </div>
+                  <ul className="text-gray-400 text-sm space-y-1">
+                    <li>• MVP 핵심 기능 개발</li>
+                    <li>• 실전 문제 해결</li>
+                    <li>• 패키지 생태계 학습</li>
+                  </ul>
+                </div>
+                <div className="bg-green-900/20 rounded-xl p-6 border border-green-500/30">
+                  <div className="text-3xl mb-3">🎯</div>
+                  <div className="text-green-300 font-semibold mb-2">
+                    Week 9-12
+                  </div>
+                  <ul className="text-gray-400 text-sm space-y-1">
+                    <li>• 기능 완성 및 테스트</li>
+                    <li>• 고령자 UX 최적화</li>
+                    <li>• 배포 준비 완료</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Results */}
+            <div className="min-w-0">
+              <h4 className="text-2xl font-bold text-white mb-4">
+                📈 Impact: 빠른 적응과 성공적인 배포
+              </h4>
+              <div className="grid md:grid-cols-3 gap-4 min-w-0">
+                <div className="bg-linear-to-br from-green-900/30 to-green-800/30 rounded-xl p-6 border border-green-500/30">
+                  <div className="text-4xl font-bold text-green-300 mb-2">
+                    3개월
+                  </div>
+                  <div className="text-white font-semibold mb-1">
+                    MVP 개발 완료
+                  </div>
+                  <div className="text-xs text-gray-400">
+                    Flutter 미경험에서 출시까지
+                  </div>
+                </div>
+                <div className="bg-linear-to-br from-blue-900/30 to-blue-800/30 rounded-xl p-6 border border-blue-500/30">
+                  <div className="text-4xl font-bold text-blue-300 mb-2">✓</div>
+                  <div className="text-white font-semibold mb-1">
+                    성공적인 배포
+                  </div>
+                  <div className="text-xs text-gray-400">
+                    고령자 대상 앱 스토어 출시
+                  </div>
+                </div>
+                <div className="bg-linear-to-br from-purple-900/30 to-purple-800/30 rounded-xl p-6 border border-purple-500/30">
+                  <div className="text-4xl font-bold text-purple-300 mb-2">
+                    💪
+                  </div>
+                  <div className="text-white font-semibold mb-1">
+                    개발자 가치 증명
+                  </div>
+                  <div className="text-xs text-gray-400">
+                    기술이 아닌 프로덕트 중심 사고
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </motion.div>
     </section>

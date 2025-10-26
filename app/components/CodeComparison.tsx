@@ -50,6 +50,11 @@ export function CodeComparison({
         text: "text-blue-300",
         border: "border-blue-500/30",
       },
+      purple: {
+        bg: "bg-purple-500/20",
+        text: "text-purple-300",
+        border: "border-purple-500/30",
+      },
     };
 
     const colors = baseColors[color || "red"];
@@ -82,8 +87,8 @@ export function CodeComparison({
         </div>
 
         {/* Code Content */}
-        <div className="p-4 overflow-x-auto min-w-0">
-          <pre className="text-sm font-mono min-w-0">
+        <div className="overflow-x-auto">
+          <div className="text-sm font-mono p-4 min-w-full">
             {lines.map((line, index) => {
               const lineNumber = index + 1;
               const isHighlighted =
@@ -92,17 +97,17 @@ export function CodeComparison({
               return (
                 <div
                   key={index}
-                  className={`flex ${
+                  className={`flex w-full ${
                     isHighlighted
                       ? "bg-yellow-500/10 border-l-2 border-yellow-500"
                       : ""
                   }`}
                 >
-                  <span className="select-none text-gray-600 pr-4 pl-2 text-right min-w-12">
+                  <span className="select-none text-gray-600 pr-4 pl-2 text-right min-w-12 shrink-0">
                     {lineNumber}
                   </span>
                   <code
-                    className={`flex-1 ${
+                    className={`whitespace-pre flex-1 ${
                       isHighlighted ? "text-yellow-200" : "text-gray-300"
                     }`}
                   >
@@ -111,7 +116,7 @@ export function CodeComparison({
                 </div>
               );
             })}
-          </pre>
+          </div>
         </div>
       </div>
     );
@@ -127,7 +132,7 @@ export function CodeComparison({
               <div className="text-red-400 font-semibold mb-1">
                 Conflict Scenario
               </div>
-              <div className="text-gray-300 text-sm break-words">
+              <div className="text-gray-300 text-sm wrap-break-word">
                 {conflictDescription}
               </div>
             </div>
@@ -180,7 +185,9 @@ export function CodeComparison({
                     ? "text-green-300"
                     : left.labelColor === "blue"
                       ? "text-blue-300"
-                      : "text-red-300"
+                      : left.labelColor === "purple"
+                        ? "text-purple-300"
+                        : "text-red-300"
               }`}
             >
               {left.label || "BEFORE"}
@@ -206,7 +213,9 @@ export function CodeComparison({
                     ? "text-green-300"
                     : right.labelColor === "blue"
                       ? "text-blue-300"
-                      : "text-red-300"
+                      : right.labelColor === "purple"
+                        ? "text-purple-300"
+                        : "text-red-300"
               }`}
             >
               {right.label || "AFTER"}
