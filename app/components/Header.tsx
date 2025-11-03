@@ -17,21 +17,21 @@ export default function Header() {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <nav className="max-w-7xl mx-auto px-6 py-4">
+      <nav className="max-w-7xl mx-auto px-4 md:px-6 py-2 md:py-4">
         <div className="flex items-center justify-between">
           <Link
             to="/"
-            className="text-2xl font-bold text-white hover:text-purple-400 transition-colors"
+            className="hidden md:block text-2xl font-bold text-white hover:text-purple-400 transition-colors"
           >
             이해람
           </Link>
 
-          <div className="flex gap-8">
+          <div className="flex gap-3 md:gap-8 w-full md:w-auto justify-center md:justify-end">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-lg font-semibold transition-colors ${
+                className={`text-sm md:text-lg font-semibold transition-colors ${
                   location.pathname === item.path
                     ? "text-purple-400"
                     : "text-gray-300 hover:text-white"
